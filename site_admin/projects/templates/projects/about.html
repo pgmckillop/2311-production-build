@@ -1,0 +1,31 @@
+{% extends 'projects/layout.html' %}
+{% load static %}
+{% block title %}About{% endblock %}
+
+{% block content %}
+
+    <br/>
+    <div class="container">
+      <div class="row">
+        <div class="span4"></div>
+        <div class="span4"><img class="center-block" src="{% static 'projects/images/img02.jpg' %}" /></div>
+        <div class="span4"></div>
+      </div>
+    </div>
+
+    <div class="container">
+        <h1>About Me</h1>
+        <p>I am available to freelance as a team leader or collaborative developer, remote or onprem.</p>
+        <h2>My skills</h2>
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                Technologies
+            </a>
+              <a href="https://docs.python.org/3/" target="blank" class="list-group-item list-group-item-action">Python</a>
+              <a href="https://docs.djangoproject.com/en/4.2/" target="blank" class="list-group-item list-group-item-action">Django</a>
+              <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="blank" class="list-group-item list-group-item-action">.Net</a>
+              <a href="https://docs.flutter.dev/" target="blank" class="list-group-item list-group-item-action">Flutter</a>
+        </div>
+        <p>remember to contact me by email.</p>
+    </div>
+{% endblock %}
