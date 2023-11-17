@@ -12,3 +12,8 @@ def about(request):
 def album(request):
     projects = Project.objects
     return render(request, "projects/album.html", {'projects': projects})
+
+
+def detail(request, project_id):
+    project_detail = get_object_or_404(Project, pk=project_id)
+    return render(request, 'projects/detail.html', {'project': project_detail})
